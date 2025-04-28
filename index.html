@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIZZANAH KITCHENS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="logo.png" /></a>
+
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#">HOME</a></li>  
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">COURSE</a></li>
+          <li><a href="#">BLOG</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </div>
+
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+      <h1>World's best catering service</h1>
+      <p>
+        Welcome to LIZZANAH KITCHEN<br>
+        Delicious Meals. Exceptional Service. Unforgettable Events.<br>
+        From small gatherings to grand celebrations, we bring flavor, flair, and freshness to your table. Choose from our wide variety of dishes, tailored to suit your event's needs—whether it's weddings, birthdays, corporate events, or private dinners.
+      </p>
+      <a href="#" class="hero-btn">Visit us to know more</a>
+    </div>
+  </section>
+  
+          <!--course-->
+        <section class="course">
+          <h1>
+            Packages We Offer
+          </h1>
+          <p>
+           We offer different kinds of packages, depending on your request(CUSTOMERS).We offer,Appetizers / Starters,Soup Course,Main Course,Side Dishes,Dessert,Drinks / Beverages</p>
+           <div class="row">
+        <div class="course-col">
+          <h3>Appetizers / Starters</h3> 
+          <p>
+            Small bites served before the main meal to stimulate appetite.
+
+Examples:
+
+Spring rolls
+
+Puff-puff and samosa
+
+Chicken wings
+
+Mini meat pies
+
+Canapés e.t.c
+          </p>
+           </div>
+          <div class="course-col">
+          <h3> Soup Course </h3>
+          <p>
+            Light soup served before the main course.
+
+Examples:
+
+Cream of chicken
+
+Egusi or Ogbono soup (served with small swallows in Nigerian style)
+
+Pepper soup (goat, fish, or chicken) e.t.c
+          </p>
+           </div>
+             <div class="course-col">
+          <h3>Main Course  </h3>
+          <p>
+            The heaviest and most important meal of the service.
+
+Examples:
+
+Jollof rice, Fried rice, or Coconut rice
+
+Pounded yam, Amala, Semovita with soup
+
+Spaghetti or Pasta dishes e.t.c
+          </p>
+           </div>
+          <div class="course-col">
+          <h3>Side Dishes</h3>
+          <p>
+            Complement the main course.
+
+Examples:
+
+Plantain (fried or boiled)
+
+Salad (coleslaw, vegetable)
+
+Moi-moi or Akara
+
+Yam porridge e.t.c
+          </p>
+           </div>
+          <div class="course-col">
+          <h3> Desserts </h3>
+          <p>
+            Sweet dishes served after the main course.
+
+Examples:
+
+Ice cream
+
+Cakes or pastries
+
+Fruit salads
+
+Chin chin e.t.c
+
+          </p>
+           </div>
+          <div class="course-col">
+          <h3>Drinks/Beverages</h3>
+          <p>
+            Drinks / Beverages
+
+Served throughout or after meals.
+
+Examples:
+
+Cocktails and mocktails
+
+Zobo, Chapman
+
+Soft drinks or juices
+
+Water (still or sparkling) e.t.c
+          </p>
+        </div>
+         </div>
+          
+        </section>
+        
+        <!---Our Kitchen----->
+        <section class="Kitchen">
+          <h1>OUR KITCHEN</h1>
+          <P>
+      We offer the best service you can ever request of.
+          </P>  
+          
+          <div class="row">
+            <div class="kitchen-col" >
+          <img src="image.png">
+          <div class="layer">
+            <h3>
+            BASIC PACKAGE 
+            </h3>
+          </div>
+            </div>
+          <div class="kitchen-col" >
+          <img src="image.png">
+          <div class="layer">
+            <h3>
+            STANDARD PACKAGE
+            </h3>
+          </div>
+          </div>
+         <div class="kitchen-col" >
+          <img src="image.png">
+          <div class="layer">
+            <h3>
+          PEMIUM PACKAGE 
+            </h3>
+          </div>
+           </div>
+            </div>
+        </section>
+
+  <!-- JavaScript for Toggle Menu -->
+  <script>
+ var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>

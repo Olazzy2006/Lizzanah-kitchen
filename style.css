@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* Header Section */
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background: url('food.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Hamburger & Close Icons */
+nav .fa {
+  display: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Text Section */
+.text-box {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.text-box h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.text-box p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.hero-btn:hover {
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.nav-links {
+  /* existing styles */
+  position: fixed; /* change from absolute to fixed */
+  top: 0;
+  right: -200px;
+  height: 100vh;
+  width: 200px;
+  background: #DAA520;
+  transition:0.5s;
+  z-index: 100; /* optional but useful */
+  padding-top: 60px;
+}
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    padding:50px;
+  }
+
+  nav .fa-bars {
+    display: block;
+  }
+
+  .nav-links .fa-times {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+  }
+}
+
+/* ---course--- */
+.course{
+  width:80%;
+  margin:auto;
+  text-align:center;
+  padding-top:100px;
+}
+h1{
+  font-size:36px;
+  font-weight:600;
+}
+p{
+  color:#777;
+  font-size:14px;
+  font-weight:600;
+  line-height:26px;
+  padding:2px;
+}
+.row{
+  margin-top:5%;
+  display: contain;
+  justify-content:space-between;
+
+}
+.course-col{
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing:border-box;
+  transition:0.5s;
+}
+h3{
+  text-align: center;
+  font-weight:700;
+  margin:10px 0;
+}
+.course-col:hover{
+   box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width:700px){
+  .row{
+    flex-direction: column;
+    
+  }
+}
+  /* ---kkitchen--- */
+  .Kitchen{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .kitchen-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position:relative;
+    overflow: hidden;
+  }
+  .kitchen-col img{
+    width: 100%;
+    display: block;
+  }
+.layer{
+  background:transparent;
+  height:100%;
+  width:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  transition:0.5s;
+}
+.layer:hover{
+  background:rgba(226,0,0,0.7);
+}
+.layer h3{
+  width:100%;
+  font-weight:500;
+  color:#fff;
+  font-size:26px;
+  bottom:0;
+  left:50%;
+  transform:translatex(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+}
+.layer:hover h3{
+  bottom:49%;
+  opacity: 1;
+}
